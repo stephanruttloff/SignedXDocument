@@ -6,7 +6,7 @@ Wrapper class to handle enveloped xmldsig in C#.
 ```c#
 public XDocument SignMyDocument(XDocument document)
 {
-  var signedDocument = new SignedXDocument(xDocument)
+  var signedDocument = new SignedXDocument(document)
   {
       SignatureProperties = new List<XElement>
       {
